@@ -1,22 +1,39 @@
-name: Publish Gem
+name: Publish Ruby Gem
 
-on:
-  release:
-    types: [released]
+on: workflow_dispatch
 
 jobs:
-  release:
+  build:
+    name: Publish
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Ruby
+      - uses: actions/checkout@v4
+      - name: Setup Ruby 3.4
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
-      - name: Build gem
+          ruby-version: "3.4"
+
+      - name: Publish to GPR
         run: |
-          gem build github-pages.gemspec
-      - name: Publish
-        run: |
-          gem push github-pages.gem --key ${{ secrets.PAGES_GEM_PUBLISH }}
+          mkdir -p $HOME/.gem
+          touch $HOME/.gem/credentials
+          chmod 0600 $HOME/.gem/credentials
+          printf -- "---\n:github: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+          gem build *.gemspec
+          gem push --KEY github --host https://rubygems.pkg.github.com/${OWNER} *.gem
+        env:
+          GEM_HOST_API_KEY: "Bearer ${{secrets.GITHUB_TOKEN}}"
+          OWNER: ${{ github.repository_owner }}
+
+    # Disabled as this does not handle 2FA
+    # - name: Publish to RubyGems
+    #   run: |
+    #     mkdir -p $HOME/.gem
+    #     touch $HOME/.gem/credentials
+    #     chmod 0600 $HOME/.gem/credentials
+    #     printf -- "---\n:rubygems_api_key: ${GEM_HOST_API_KEY}\n" > $HOME/.gem/credentials
+    #     gem build *.gemspec
+    #     gem push *.gem
+    #   env:
+    #     GEM_HOST_API_KEY: "${{secrets.RUBYGEMS_AUTH_TOKEN}}"
