@@ -9,11 +9,19 @@
 <body>
     <div class="container">
         <div class="nav">
-            {% include nav.html %}
+            {% include includes/nav.html %}
         </div>
         <div class="content">
             {{ content }}
         </div>
-    </div> 
+    </div>
+    {% comment %}
+    <div class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+{% endcomment %}  
 </body>
 </html>
