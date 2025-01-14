@@ -2,7 +2,10 @@
   <ul>
       <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
       <li>
-          <button class="collapsible">HTML Guide</button>
+          <button class="collapsible">
+              HTML Guide
+              <span class="arrow">&#9654;</span>
+          </button>
           <ul class="content">
               <li><a href="{{ site.baseurl }}/html-guide/head.html">&lt;head&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guide/title.html">&lt;title&gt;</a></li>
@@ -16,7 +19,10 @@
           </ul>
       </li>
       <li>
-          <button class="collapsible">CSS Guide</button>
+          <button class="collapsible">
+              CSS Guide
+              <span class="arrow">&#9654;</span>
+          </button>
           <ul class="content">
               <li><a href="{{ site.baseurl }}/css-guide/link.html">&lt;link&gt;</a></li>
               <li><a href="{{ site.baseurl }}/css-guide/background-color.html">Background-color</a></li>
@@ -58,9 +64,18 @@ button.collapsible {
   text-align: left;
   outline: none;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 button.collapsible.active {
   background-color: #005fa3;
+}
+button.collapsible .arrow {
+  transition: transform 0.3s ease;
+}
+button.collapsible.active .arrow {
+  transform: rotate(90deg);
 }
 ul.content {
   display: none;
