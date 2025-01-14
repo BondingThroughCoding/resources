@@ -1,11 +1,8 @@
-title: Bonding T2hrough Coding
+title: Bonding Through Coding
 description: Tech fun for kids! Learn HTML & CSS with simple, interactive lessons. 
 theme: minima # Or a  ny GitHub Pages-supported theme
 markdown: kramdown
 
-# Navigation settings
-atom_feed:
-  hide                   : true     # change to true to hide the RSS feed in the footer
 
 collections:
   nav:
