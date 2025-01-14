@@ -17,28 +17,6 @@ header {
   display: flex;
 }
 
-.sidebar {
-  background-color: #333;
-  width: 200px;
-  padding: 20px;
-  color: white;
-}
-
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.sidebar ul li {
-  margin: 10px 0;
-}
-
-.sidebar ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
 .content {
   margin-left: 220px;
   padding: 20px;
@@ -52,9 +30,53 @@ h1 {
   display : flex;
   flex-direction : row;
 }
+
+
+/* Basic styling for sidebar */
 .sidebar{
-  background-color : #333;
   width : 200px;
   padding : 20px;
   color : white;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 5px 0;
+}
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+button.collapsible {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+button.collapsible .arrow {
+  transition: transform 0.3s ease;
+}
+button.collapsible.active .arrow {
+  transform: rotate(90deg);
+}
+ul.content {
+  display: none;
+  margin-left: 15px;
+}
+ul.content li a {
+  font-size: 14px;
+  padding: 3px 10px;
 }
