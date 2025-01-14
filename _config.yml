@@ -7,3 +7,6 @@ markdown: kramdown
 atom_feed:
   hide                   : true     # change to true to hide the RSS feed in the footer
 
+collections:
+  nav:
+    output: false
