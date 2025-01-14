@@ -4,7 +4,6 @@ theme: minima # Or a  ny GitHub Pages-supported theme
 markdown: kramdown
 
 # Navigation settings
-footer: false
 collections:
   nav:
     output: true
