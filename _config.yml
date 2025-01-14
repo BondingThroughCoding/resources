@@ -3,6 +3,9 @@ description: Tech fun for kids! Learn HTML & CSS with simple, interactive lesson
 theme: minima # Or a  ny GitHub Pages-supported theme
 markdown: kramdown
 
+# Navigation settings
+atom_feed:
+  hide                   : true     # change to true to hide the RSS feed in the footer
 
 collections:
   nav:
