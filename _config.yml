@@ -1,9 +1,6 @@
-title: Bonding Through Coding
-description: Tech fun for kids! Learn HTML & CSS with simple, interactive lessons. 
-theme: minima # Or a  ny GitHub Pages-supported theme
-markdown: kramdown
-
-
-collections:
-  nav:
-    output: true
+title: Minimal theme
+logo: /assets/img/logo.png
+description: Minimal is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
