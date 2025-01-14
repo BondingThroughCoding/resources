@@ -5,4 +5,5 @@ markdown: kramdown
 
 # Navigation settings
 atom_feed:
-  hide                   : true     # change to true to hide the RSS feed in the footer
+  hide                   : false     # change to true to hide the RSS feed in the footer
+
