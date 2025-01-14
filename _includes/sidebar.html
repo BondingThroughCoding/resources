@@ -2,8 +2,8 @@
   <ul>
       <li><a href="{{ site.baseurl }}/index.html">Home</a></li>
       <li>
-          <a href="{{ site.baseurl }}/html-guide.html">HTML Guide</a>
-          <ul>
+          <button class="collapsible">HTML Guide</button>
+          <ul class="content">
               <li><a href="{{ site.baseurl }}/html-guide/head.html">&lt;head&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guide/title.html">&lt;title&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guide/body.html">&lt;body&gt;</a></li>
@@ -16,8 +16,8 @@
           </ul>
       </li>
       <li>
-          <a href="{{ site.baseurl }}/css-guide.html">CSS Guide</a>
-          <ul>
+          <button class="collapsible">CSS Guide</button>
+          <ul class="content">
               <li><a href="{{ site.baseurl }}/css-guide/link.html">&lt;link&gt;</a></li>
               <li><a href="{{ site.baseurl }}/css-guide/background-color.html">Background-color</a></li>
               <li><a href="{{ site.baseurl }}/css-guide/opacity.html">Opacity</a></li>
@@ -32,3 +32,59 @@
       <li><a href="{{ site.baseurl }}/about.html">About</a></li>
   </ul>
 </nav>
+
+<style>
+/* Basic styling for sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 5px 0;
+}
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
+}
+button.collapsible {
+  background-color: #007acc;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+button.collapsible.active {
+  background-color: #005fa3;
+}
+ul.content {
+  display: none;
+  margin-left: 15px;
+}
+ul.content li a {
+  font-size: 14px;
+  padding: 3px 10px;
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const collapsibles = document.querySelectorAll(".collapsible");
+  collapsibles.forEach((button) => {
+      button.addEventListener("click", function () {
+          this.classList.toggle("active");
+          const content = this.nextElementSibling;
+          if (content.style.display === "block") {
+              content.style.display = "none";
+          } else {
+              content.style.display = "block";
+          }
+      });
+  });
+});
+</script>
