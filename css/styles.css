@@ -48,10 +48,6 @@ header {
 h1 {
   color: #4CAF50;
 }
-.container{
-  display : flex;
-  flex-direction : row;
-}
 .sidebar{
   width : 200px;
   padding : 20px;
