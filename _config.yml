@@ -1,0 +1,9 @@
+title: My Website
+description: A simple website with navigation
+theme: minima # Or any GitHub Pages-supported theme
+markdown: kramdown
+
+# Navigation settings
+collections:
+  nav:
+    output: true
