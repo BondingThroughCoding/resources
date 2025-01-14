@@ -17,6 +17,8 @@ header {
   display: flex;
 }
 
+
+
 .content {
   margin-left: 220px;
   padding: 20px;
@@ -40,17 +42,18 @@ h1 {
 }
 
 .sidebar ul {
-  list-style: none;
+  list-style-type: none;
   padding: 0;
-  margin: 0;
 }
-.sidebar li {
-  margin: 5px 0;
+
+.sidebar ul li {
+  margin: 10px 0;
 }
-.sidebar a {
+
+.sidebar ul li a {
+  color: white;
   text-decoration: none;
-  display: block;
-  padding: 5px 10px;
+  font-size: 18px;
 }
 button.collapsible {
   background-color: transparent;
