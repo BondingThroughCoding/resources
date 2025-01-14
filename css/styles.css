@@ -17,28 +17,11 @@ header {
   display: flex;
 }
 
-
-
-.content {
-  margin-left: 220px;
+.sidebar {
+  background-color: #333;
+  width: 200px;
   padding: 20px;
-  width: calc(100% - 220px);
-}
-
-h1 {
-  color: #4CAF50;
-}
-.container{
-  display : flex;
-  flex-direction : row;
-}
-
-
-/* Basic styling for sidebar */
-.sidebar{
-  width : 200px;
-  padding : 20px;
-  color : white;
+  color: white;
 }
 
 .sidebar ul {
@@ -54,6 +37,40 @@ h1 {
   color: white;
   text-decoration: none;
   font-size: 18px;
+}
+
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  width: calc(100% - 220px);
+}
+
+h1 {
+  color: #4CAF50;
+}
+.container{
+  display : flex;
+  flex-direction : row;
+}
+.sidebar{
+  width : 200px;
+  padding : 20px;
+  color : white;
+}
+/* Basic styling for sidebar */
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar li {
+  margin: 5px 0;
+}
+.sidebar a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 10px;
 }
 button.collapsible {
   background-color: transparent;
