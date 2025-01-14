@@ -20,7 +20,6 @@ header {
 .content {
   margin-left: 40px;
   padding: 20px;
-  width: calc(100% - 220px);
 }
 
 h1 {
