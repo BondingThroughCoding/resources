@@ -6,7 +6,7 @@
               HTML Guide
               <span class="arrow">&#9654;</span>
           </button>
-          <ul>
+          <ul class="sidebar-content">
               <li><a href="{{ site.baseurl }}/html-guides/head">&lt;head&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/title">&lt;title&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/body">&lt;body&gt;</a></li>
@@ -23,7 +23,7 @@
               CSS Guide
               <span class="arrow">&#9654;</span>
           </button>
-          <ul>
+          <ul class="sidebar-content">
               <li><a href="{{ site.baseurl }}/css-guides/link">&lt;link&gt;</a></li>
               <li><a href="{{ site.baseurl }}/css-guides/background-color">Background-color</a></li>
               <li><a href="{{ site.baseurl }}/css-guides/opacity">Opacity</a></li>
@@ -84,7 +84,7 @@ button.collapsible .arrow {
 button.collapsible.active .arrow {
   transform: rotate(90deg);
 }
-ul.content {
+ul.sidebar-content {
   display: none;
   margin-left: 15px;
 }
