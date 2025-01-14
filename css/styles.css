@@ -26,3 +26,7 @@ header {
 h1 {
   color: #4CAF50;
 }
+.subcontainer {
+  display: flex;
+  flex-direction: row;
+} 
