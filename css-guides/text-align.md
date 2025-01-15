@@ -1,6 +1,7 @@
 --- 
 layout: default
-title: Selectors Guide
+title: Text Align Guide
+author: Caitlyn Muscat
 ---
 
 # Text Align 

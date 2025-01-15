@@ -1,6 +1,7 @@
 --- 
 layout: default
 title: Selectors Guide
+author: Caitlyn Muscat
 ---
 
 # Selectors

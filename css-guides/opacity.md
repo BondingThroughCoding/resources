@@ -1,6 +1,7 @@
 --- 
 layout: default
-title: Selectors Guide
+title: Opacity Guide
+author: Caitlyn Muscat
 ---
 
 # Opacity 

@@ -1,6 +1,7 @@
 --- 
 layout: default
-title: Selectors Guide
+title: Font Family Guide
+author: Caitlyn Muscat
 ---
 
 

@@ -1,6 +1,7 @@
 --- 
 layout: default
-title: Selectors Guide
+title: Background Color Guide
+author: Caitlyn Muscat
 ---
 
 # Background Color 
