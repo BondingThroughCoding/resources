@@ -20,4 +20,4 @@ p {
 
 ```
 
-The curly braces `{}` are used to 'hold' whatever CSS rules we want to apply to the paragraph, which, in this example, is denoted by `p`. 
+The curly braces `{}` are used to 'hold' whatever CSS rules we want to apply to the paragraph, which, in this example, is denoted by `p`. Don't forget to put the `;` at the end of your properties, otherwise your code won't work!
