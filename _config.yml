@@ -5,3 +5,4 @@ baseurl: "/resources"
 url: "https://bondingthroughcoding.github.io"
 theme: minima
 markdown: kramdown
+highlighter: rouge

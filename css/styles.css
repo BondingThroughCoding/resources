@@ -1,9 +1,37 @@
+
+/* Style the code blocks */
+pre {
+  background-color: #f4f4f4; /* Light gray background */
+  padding: 10px; /* Add padding inside the block */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ddd; /* Add a light border */
+  overflow-x: auto; /* Horizontal scroll for long code lines */
+  font-family: Consolas, 'Courier New', monospace; /* Monospace font */
+}
+
+pre > code{
+  background-color: transparent;
+}
+
+/* Inline code styling */
+code {
+  background-color: #e8e8e8; /* Slightly darker gray background */
+  padding: 2px 4px; /* Padding around inline code */
+  border-radius: 3px; /* Rounded corners */
+  font-family: Consolas, 'Courier New', monospace; /* Monospace font */
+  font-size: 0.95em; /* Slightly smaller text */
+}
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
+}
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -32,5 +60,5 @@ h1 {
 .header {
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid #6f6f6f;
 }
