@@ -49,6 +49,9 @@ header {
 .content {
   margin-left: 40px;
   padding: 20px;
+  flex: 1; /* Takes up the remaining space */
+  word-wrap: break-word; /* Allows the text to wrap if necessary */
+  white-space: normal;
 }
 
 h1 {
@@ -57,6 +60,7 @@ h1 {
 .subcontainer {
   display: flex;
   flex-direction: row;
+  width: 100%; 
 } 
 .header {
   text-align: center;
