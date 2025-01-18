@@ -8,15 +8,17 @@
           </button>
           <ul class="sidebar-content">
               <li><a href="{{ site.baseurl }}/html-guides/head">&lt;head&gt;</a></li>
-              <li><a href="{{ site.baseurl }}/html-guides/body">&lt;body&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/title">&lt;title&gt;</a></li>
+              <li><a href="{{ site.baseurl }}/html-guides/link">&lt;link&gt;</a></li>
+              <li><a href="{{ site.baseurl }}/html-guides/body">&lt;body&gt;</a></li>
+              <li><a href="{{ site.baseurl }}/html-guides/div">&lt;div&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/heading">&lt;h1&gt; to &lt;h6&gt;</a></li>
+              <li><a href="{{ site.baseurl }}/html-guides/div">&lt;table&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/p">&lt;p&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/ol">&lt;ol&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/ul">&lt;ul&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/img">&lt;img&gt;</a></li>
               <li><a href="{{ site.baseurl }}/html-guides/a">&lt;a&gt;</a></li>
-              <li><a href="{{ site.baseurl }}/html-guides/link">&lt;link&gt;</a></li>
           </ul>
       </li>
       <li>
@@ -60,8 +62,12 @@
   text-decoration: none;
   display: block;
   color : #222;
-  font-size: 18px;
-  padding: 5px 10px;
+  font-size: 16px;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+.sidebar a:hover {
+  background-color: #e8e8e8;
 }
 button.collapsible {
   background-color: transparent;
