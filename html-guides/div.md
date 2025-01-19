@@ -35,17 +35,22 @@ In this example:
 
 You can use CSS to make the <div> look awesome! For example:
 ```html
-<style>
-  .container {
-    border: 2px solid blue;
-    padding: 20px;
-    background-color: lightyellow;
-  }
-</style>
+<head>
+  <style>
+    .container {
+      border: 2px solid blue;
+      padding: 20px;
+      background-color: lightyellow;
+    }
+  </style>
+</head>
 ...
-<div class="container">
-  <h1>Welcome to My Webpage</h1>
-  <p>This is the main section of my webpage.</p>
-</div>
+<body>
+  <div class="container">
+    <h1>Welcome to My Webpage</h1>
+    <p>This is the main section of my webpage.</p>
+  </div>
+</body>
 ```
-
+<h1>Welcome to My Webpage</h1>
+<p>This is the main section of my webpage.</p>

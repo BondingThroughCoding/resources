@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Background Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+      padding: 20px;
+    }
+    .demo-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .controls {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .color-option {
+      cursor: pointer;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      transition: background-color 0.3s;
+    }
+    .color-option:hover {
+      background-color: #555;
+    }
+    .display-box {
+      width: 300px;
+      height: 150px;
+      border: 1px solid #ccc;
+      background-color: #b22222; /* Default color */
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Demo: Background-Color</h1>
+  <div class="demo-container">
+    <div class="controls">
+      <div class="color-option" data-color="brown">brown</div>
+      <div class="color-option" data-color="#74992e">#74992e</div>
+      <div class="color-option" data-color="rgb(255, 255, 128)">rgb(255, 255, 128)</div>
+      <div class="color-option" data-color="rgba(255, 255, 128, 0.5)">rgba(255, 255, 128, 0.5)</div>
+      <div class="color-option" data-color="hsl(50, 33%, 25%)">hsl(50, 33%, 25%)</div>
+      <div class="color-option" data-color="hsla(50, 33%, 25%, 0.5)">hsla(50, 33%, 25%, 0.5)</div>
+    </div>
+    <div class="display-box" id="display-box"></div>
+  </div>
+  <script>
+    // JavaScript to update the display box color
+    const colorOptions = document.querySelectorAll('.color-option');
+    const displayBox = document.getElementById('display-box');
+
+    colorOptions.forEach(option => {
+      option.addEventListener('click', () => {
+        displayBox.style.backgroundColor = option.getAttribute('data-color');
+      });
+    });
+  </script>
+</body>
+</html>
