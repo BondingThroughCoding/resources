@@ -12,7 +12,7 @@ author: Caitlyn Muscat
 
 Say I wanted to change the background color of the header of my website, I can use the following piece of code: 
 
-```
+```css
 h1 {
     background-color: rgb(150, 0, 255); 
 }
