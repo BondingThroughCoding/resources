@@ -30,7 +30,6 @@ h1 {
     <div class="color-option" contenteditable="true">background-color: hsla(65, 96%, 66%, 0.7);</div>
   </div>
   <div class="display-box" id="display-box"></div>
-  <div id="error-message" style="color: red; display: none;">Invalid color code!</div>
 </div>
 
 <style>
@@ -38,7 +37,7 @@ h1 {
     display: flex;
     align-items: center;
     gap: 20px;
-    background-color: #f7f7f7; /* Light background for the container */
+    background-color: #f7f7f7;
     padding: 20px;
     border-radius: 8px;
   }
@@ -53,24 +52,28 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 4px;
     text-align: center;
-    background-color: #fff; /* Light background for color options */
-    color: #333; /* Dark text for light mode */
+    background-color: #fff;
+    color: #333;
     transition: background-color 0.3s, color 0.3s;
   }
   .color-option:hover {
-    background-color: #e0e0e0; /* Light hover effect */
-    color: #000; /* Dark text on hover */
+    background-color: #e0e0e0;
+    color: #000;
   }
+
   .color-option:empty:before {
     content: "Edit color code";
     color: #aaa;
   }
   .display-box {
-flex: 1;
-height: 300px;
+    flex: 1;
+    height: 300px;
     border: 1px solid #ccc;
-    background-color: #b22222; /* Default color */
+    background-color: #b22222;
     transition: background-color 0.5s ease;
+  }
+  .error{
+    outline: 2px solid red;
   }
 </style>
 
@@ -78,7 +81,6 @@ height: 300px;
   document.addEventListener('DOMContentLoaded', () => {
     const colorOptions = document.querySelectorAll('.color-option');
     const displayBox = document.getElementById('display-box');
-    const errorMessage = document.getElementById('error-message');
 
     colorOptions.forEach(option => {
       // Handle input event for editable divs
@@ -92,10 +94,12 @@ height: 300px;
         const rgbColor = convertToRGB(newColor);
 
         if (isValidColor(rgbColor) || isValidColor(newColor)) {
-          displayBox.style.backgroundColor = rgbColor;
-          errorMessage.style.display = 'none';  // Hide error message if valid
+          displayBox.style.backgroundColor = newColor;
+            option.classList.remove("error")
+
         } else {
-          errorMessage.style.display = 'block'; // Show error message if invalid
+          displayBox.style.backgroundColor = 'transparent'; // Reset display box color
+          option.classList.add("error")
         }
       });
 
@@ -110,10 +114,13 @@ height: 300px;
         const rgbColor = convertToRGB(newColor);
         
         if (isValidColor(rgbColor) || isValidColor(newColor)) {
-          displayBox.style.backgroundColor = rgbColor;
-          errorMessage.style.display = 'none';  // Hide error message if valid
+          displayBox.style.backgroundColor = newColor;
+            option.classList.remove("error")
+
         } else {
-          errorMessage.style.display = 'block'; // Show error message if invalid
+          displayBox.style.backgroundColor = 'transparent'; // Reset display box color
+          option.classList.add("error")
+
         }
       });
     });
@@ -121,8 +128,6 @@ height: 300px;
     function isValidColor(color) {
       const testDiv = document.createElement('div');
       testDiv.style.backgroundColor = color;
-      console.log(color)
-      console.log(testDiv.style.backgroundColor)
       return testDiv.style.backgroundColor === color;
     }
 
@@ -210,5 +215,6 @@ height: 300px;
 </script>
 
 {% endraw %}
+
 
 This code tells my website that I am changing the background color of my header, `h1`, to purple using rgb values!
