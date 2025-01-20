@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Home"
+title: "Index"
 ---
 
 # Welcome to the Bonding Through Coding Website!
