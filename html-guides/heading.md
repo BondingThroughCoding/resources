@@ -2,58 +2,79 @@
 layout: default
 title: Heading Tag Guide
 ---
+# Understanding the `<h1>` to `<h6>` Tags: Creating Headings for Your Webpage
 
-# Heading Tag Guide
+The `<h1>` to `<h6>` tags are used to create headings on your webpage. They help organize your content, making it easy to read and understand. Headings also tell search engines what your page is about!
 
-A quick guide to using HTML heading tags from `<h1>` to `<h6>`.
+## What are Heading Tags?
 
-## Introduction
+Headings are like titles or subtitles for different sections of your webpage. HTML gives you six levels of headings, from `<h1>` (the biggest and most important) to `<h6>` (the smallest and least important). Each level has a different size, which helps show the structure of your content.
 
-HTML heading tags are used to define headings in a document. They range from `<h1>` (the most important) to `<h6>` (the least important). Proper use of headings helps structure your content and improve accessibility.
+### How They Look:
+- **`<h1>`**: The largest and most important heading.
+- **`<h2>`**: The second-largest heading, great for subsections.
+- **`<h3>` to `<h6>`**: Smaller headings, used for further sub-sections or details.
 
-## Examples of Heading Tags
+### Example:
+```html
+<h1>Main Title of the Page</h1>
+<h2>Section 1: Introduction</h2>
+<h3>Subsection 1.1: Overview</h3>
+<h4>Sub-subsection 1.1.1: Details</h4>
+<h5>Even More Details</h5>
+<h6>Smallest Heading</h6>
+```
+### Visual Hierarchy Example:
 
-### Heading 1: `<h1>`
+If this were a book:
 
-# This is an `<h1>` heading
+<h1> would be the book title.
+<h2> would be chapter titles.
+<h3> would be section titles inside a chapter.
+<h4> to <h6> would be used for smaller subsections.
 
-The `<h1>` tag represents the main title or most important heading in a document.
 
-### Heading 2: `<h2>`
+### Why are Headings Important?
 
-## This is an `<h2>` heading
+- Organize Content: Headings break up your content into sections, making it easier to read.
+- Search Engine Optimization (SEO): Search engines like Google use headings to understand what your page is about.
+- Accessibility: Headings help screen readers navigate your page, making it more accessible.
 
-The `<h2>` tag is used for secondary headings, often representing sections under the main heading.
+### Pro Tips:
 
-### Heading 3: `<h3>`
+- Use only one <h1> per page for the main title.
+- Use headings in order: <h1> first, then <h2>, and so on.
+- Don’t skip levels (e.g., don’t go from <h1> to <h3> directly).
 
-### This is an `<h3>` heading
+<textarea id="code" name="code">
+  </textarea>
+  <iframe id="preview" style="width: 100%; height: 100%; border: none;"></iframe>
 
-The `<h3>` tag is used for sub-sections under an `<h2>` heading.
+  <script>
+    // Initialize CodeMirror
+    var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+      mode: 'xml',  // HTML, CSS, and JavaScript combined mode
+      lineNumbers: true,  // Show line numbers
+      theme: 'dracula',   // Theme of your choice
+      matchBrackets: true // Highlight matching brackets
+    });
+    function updatePreview() {
+      var iframe = document.getElementById('preview');
+      var content = editor.getValue();  // Get the content from the editor
+      var doc = iframe.contentWindow.document;
 
-### Heading 4: `<h4>`
+      // Write content to the iframe
+      doc.open();
+      doc.write(content);
+      doc.close();
+    }
 
-#### This is an `<h4>` heading
+    // Update the preview whenever the content in the editor changes
+    editor.on('change', function() {
+      updatePreview();
+    });
 
-The `<h4>` tag is typically used for sub-sub-sections under an `<h3>` heading.
+    // Initial preview update
+    updatePreview();
 
-### Heading 5: `<h5>`
-
-##### This is an `<h5>` heading
-
-The `<h5>` tag is used for even smaller sub-sections.
-
-### Heading 6: `<h6>`
-
-###### This is an `<h6>` heading
-
-The `<h6>` tag is the smallest and least important heading level.
-
-## Best Practices
-
-- Use only one `<h1>` per page for the main title.
-- Structure content hierarchically, using `<h2>` for main sections, `<h3>` for sub-sections, and so on.
-- Avoid skipping heading levels (e.g., don’t jump from `<h2>` to `<h4>`).
-- Use headings to improve readability and SEO.
-
-[Back to HTML Guide]({{ site.baseurl }}/html-guide)
+  </script>
