@@ -16,7 +16,6 @@ Once again, we usually place the `font-size` property inside a selector:
 h1 {
     font-size: 20px; 
 }
-
 ```
 
 If you want to know more about the `font-size` property, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size) or [w3schools](https://www.w3schools.com/css/css_font_size.asp). Both of these sites give excellent examples of the font-size CSS property that are interactive, and allow you to change and alter the values to see how the property works. 

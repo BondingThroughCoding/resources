@@ -13,11 +13,9 @@ author: Caitlyn Muscat
 I can use `text-align` to change the way my heading looks on the page: 
 
 ```css
-
 h1 {
     text-align: center; 
 }
-
 ```
 
 If you want to know more about the `text-align` property, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align) or [w3schools](https://www.w3schools.com/cssref/pr_text_text-align.php). Both of these sites give excellent examples of the text-align CSS property that are interactive, and allow you to change and alter the values to see how the property works. 

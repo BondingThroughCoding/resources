@@ -16,7 +16,6 @@ To make a paragraph of text semi-transparent, I could do something like this:
 p {
     opacity: 0.5; 
 }
-
 ```
 
 If you want to know more about the `opacity` feature, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/opacity) or [w3schools](https://www.w3schools.com/css/css_image_transparency.asp). Both of these sites give excellent examples of how the opacity property works, with plenty of examples on how to use it, and how the feature looks on a website. 

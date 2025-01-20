@@ -17,7 +17,6 @@ Here's an example of how to use the `font-family` CSS property"
 h1, p {
     font-family: Georgia, serif; 
 }
-
 ```
 
 If you want to know more about the `font-family` property, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family) or [w3schools](https://www.w3schools.com/cssref/pr_font_font-family.php). Both of these sites give excellent examples of the font-family CSS property that are interactive, and allow you to change and alter the values to see how the property works. 

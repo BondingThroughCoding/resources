@@ -29,7 +29,6 @@ I can also list multiple HTML sections that I want to style. It will look a bit 
 h1, h2, p {
     color: red; 
 }
-
 ```
 
 If you want to know more about the `Attribute Selectors` feature, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) or [w3schools](https://www.w3schools.com/css/css_attribute_selectors.asp). Both of these sites give excellent examples of how the attribute selector feature works, with plenty of examples on how to use them. 

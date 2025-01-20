@@ -20,7 +20,6 @@ h1 {
 p {
     font-weight: 5px; 
 }
-
 ```
 
 If you want to know more about the `font-weight` property, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) or [w3schools](https://www.w3schools.com/cssref/pr_font_weight.php). Both of these sites give excellent examples of the font-weight CSS property that are interactive, and allow you to change and alter the values to see how the property works. 
