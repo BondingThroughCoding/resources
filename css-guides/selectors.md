@@ -14,11 +14,9 @@ Attrubute Selectors are used to determine what you want to change. This allows y
 To change the text color of our paragraphs, we can use attribute selectors like this: 
 
 ```css
-
 p {
     color: blue; 
 }
-
 ```
 
 The curly braces `{}` are used to 'hold' whatever CSS rules we want to apply to the paragraph, which, in this example, is denoted by `p`. Don't forget to put the `;` at the end of your properties, otherwise your code won't work!
