@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+    font-size: 60px;
+    
+}
+
+#link{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: Verdana;
+    color: darkslategray;
+    margin: 30px; 
+}
+
+#para1{
+    margin: 40px;
+    padding: 20px;
+    text-align: justify;
+    background-color: darkslategray;
+    color: lightgoldenrodyellow;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+#para2{
+    margin: 40px;
+    padding: 20px;
+    text-align: justify;
+    background-color: darkgreen;
+    color: bisque;
+    font-style: italic;
+    border-radius: 10px;
+}
+
+#img1 {
+    display: block; /* required to make an image appear in the center of the screen when using margin-inline auto */
+    border: solid black 2px;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 40px;
+}
+
+img:hover {
+    transform: scaleX(-1);
+}
+
+#para3{
+    text-align: center;
+}
+
+tr:hover{
+    color: green;
+}
+
+table{
+    margin-bottom: 20px; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lists{
+    display:block; 
+    text-align: center;
+}
+
+#lists ul, #lists ol{
+    display: inline-block; 
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(47, 79, 79, 50%);
+    padding: 15px; 
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
