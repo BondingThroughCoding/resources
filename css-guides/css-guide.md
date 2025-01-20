@@ -25,6 +25,6 @@ CSS stands for Cascading Style Sheets. It is used to style the layout of web pag
 
 ```css
 p {
-    color: blue;
-    font-size: 18px;
+   color: blue;
+   font-size: 18px;
 }

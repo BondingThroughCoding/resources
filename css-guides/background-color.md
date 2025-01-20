@@ -18,6 +18,8 @@ h1 {
 }
 ```
 
+If you want to know more about the `background-color` property, you can go to the links at [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color) or [w3schools](https://www.w3schools.com/cssref/pr_background-color.php). Both of these sites give excellent examples of the background-color CSS property that are interactive, and allow you to change and alter the values to see how the property works. 
+
 {% raw %}
 
 <div class="demo-container">
