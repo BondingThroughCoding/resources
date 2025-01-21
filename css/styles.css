@@ -68,11 +68,19 @@ h1 {
   border-bottom: 2px solid #6f6f6f;
 }
 
+.demo-container{
+  display: flex;
+  flex-direction: column;
+  background-color: #dfdfdf;
+  border-radius: 5px;
+  border: 1px solid #6f6f6f;
+}
 
 .code-container{
   display: flex;
   flex-direction: row;
-  background-color: #dfdfdf;
+}
+.demo-title{
   padding: 10px;
 }
 .CodeMirror {

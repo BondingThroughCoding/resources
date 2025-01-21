@@ -18,43 +18,29 @@ Headings are like titles or subtitles for different sections of your webpage. HT
 - **`<h3>` to `<h6>`**: Smaller headings, used for further sub-sections or details.
 
 ### Example:
-
-```html
-<h1>Main Title of the Page</h1>
-<h2>Section 1: Introduction</h2>
-<h3>Subsection 1.1: Overview</h3>
-<h4>Sub-subsection 1.1.1: Details</h4>
-<h5>Even More Details</h5>
-<h6>Smallest Heading</h6>
-```
-
-### Visual Hierarchy Example:
-
-If this were a book:
-
-`<h1>` would be the book title.
-`<h2>` would be chapter titles.
-`<h3>` would be section titles inside a chapter.
-`<h4>` to `<h6>` would be used for smaller subsections.
-
-### Why are Headings Important?
-
-- Organize Content: Headings break up your content into sections, making it easier to read.
-- Search Engine Optimization (SEO): Search engines like Google use headings to understand what your page is about.
-- Accessibility: Headings help screen readers navigate your page, making it more accessible.
-
-### Pro Tips:
-
-- Use only one `<h1>` per page for the main title.
-- Use headings in order: `<h1>` first, then `<h2>`, and so on.
-- Don’t skip levels (e.g., don’t go from `<h1>` to `<h3>` directly).
-
 {% raw %}
-<div class='code-container'>
-  <textarea id="code" name="code">
-  </textarea>
-
-  <iframe id="preview" style=" border: none;"></iframe>
+<div class='demo-container'>
+  <div class='demo-title'>
+    <div>HTML Demo: &#96;&lt;h1&#96;&gt;-&#96;&lt;h6&#96;&gt;</div>
+  </div>
+  <div class='code-container'>
+    <textarea id="code" name="code">
+<h1>Heading 1: Largest and Most Important</h1>
+<h2>Heading 2: Slightly Smaller</h2>
+<h3>Heading 3: Medium Size</h3>
+<h4>Heading 4: Smaller Heading</h4>
+<h5>Heading 5: Even Smaller</h5>
+<h6>Heading 6: Smallest Heading</h6>
+<style>
+  h1 {color: #ff5733;}
+  h2 {color: #33aaff;}
+  h3 {color: #178859;}
+  h4 {color: #ffaa33;}
+  h5 {color: #aa33ff;}
+  h6 {color: #666;}
+</style></textarea>
+    <iframe id="preview" style=" border: none;"></iframe>
+  </div>
 </div>
 
   <script>
@@ -87,3 +73,26 @@ If this were a book:
   </script>
 
 {% endraw %}
+
+### Visual Hierarchy Example:
+
+If this were a book:
+
+`<h1>` would be the book title.
+`<h2>` would be chapter titles.
+`<h3>` would be section titles inside a chapter.
+`<h4>` to `<h6>` would be used for smaller subsections.
+
+### Why are Headings Important?
+
+- Organize Content: Headings break up your content into sections, making it easier to read.
+- Search Engine Optimization (SEO): Search engines like Google use headings to understand what your page is about.
+- Accessibility: Headings help screen readers navigate your page, making it more accessible.
+
+### Pro Tips:
+
+- Use only one `<h1>` per page for the main title.
+- Use headings in order: `<h1>` first, then `<h2>`, and so on.
+- Don’t skip levels (e.g., don’t go from `<h1>` to `<h3>` directly).
+
+
