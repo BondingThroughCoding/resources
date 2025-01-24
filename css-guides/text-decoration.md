@@ -10,7 +10,7 @@ author: Caitlyn Muscat
 
 ### Text Decoration Color
 
-`text-decoration-color` allows you to change the color of the underline, wavyline, or whatever stye of text decoration you have used within your CSS stylesheet. Similar to `color`, you can determine the color of the decoration by by giving the property the name of a color i.e. white, yellow, green, or you can give it something fancier called a hex code! See the `color` page to grab some more info on this property! 
+`text-decoration-color` allows you to change the color of the underline, wavyline, or whatever stye of text decoration you have used within your CSS stylesheet. Similar to `color`, you can determine the color of the decoration by by giving the property the name of a color i.e. white, yellow, green, or you can give it something fancier called a hex code! See the `color` page to grab some more info on this property.
 
 ## Example
 
