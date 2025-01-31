@@ -140,9 +140,9 @@ code {
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
-  }
+}
 
-  .reset-button:hover{
+.reset-button:hover{
     background-color: #45a049;
 }
 
@@ -154,6 +154,5 @@ footer {
   margin-bottom: 20px;
   border-radius: 20px;
   padding: 10px; 
-
 }
 
