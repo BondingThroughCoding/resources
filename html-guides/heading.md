@@ -32,12 +32,12 @@ Headings are like titles or subtitles for different sections of your webpage. HT
 <h5>Heading 5: Even Smaller</h5>
 <h6>Heading 6: Smallest Heading</h6>
 <style>
-  h1 {color: #ff5733;}
-  h2 {color: #33aaff;}
-  h3 {color: #178859;}
-  h4 {color: #ffaa33;}
-  h5 {color: #aa33ff;}
-  h6 {color: #666;}
+  h1 {color: red;}
+  h2 {color: blue;}
+  h3 {color: green;}
+  h4 {color: orange;}
+  h5 {color: purple;}
+  h6 {color: black;}
 </style></textarea>
     <iframe id="preview" style=" border: none;"></iframe>
   </div>
@@ -72,16 +72,7 @@ Headings are like titles or subtitles for different sections of your webpage. HT
 
   </script>
 
-{% endraw %}
-
-### Visual Hierarchy Example:
-
-If this were a book:
-
-`<h1>` would be the book title.
-`<h2>` would be chapter titles.
-`<h3>` would be section titles inside a chapter.
-`<h4>` to `<h6>` would be used for smaller subsections.
+{% endraw %}  
 
 ### Why are Headings Important?
 
