@@ -133,7 +133,7 @@ code {
   background-color: white;
 }
 
-<<<<<<< Updated upstream
+
 .reset-button{
   background-color: #4CAF50;
   color: white;
@@ -144,8 +144,8 @@ code {
 
   .reset-button:hover{
     background-color: #45a049;
-  }
-=======
+}
+
 footer {
   text-align: center; 
   color: white;
@@ -156,4 +156,4 @@ footer {
   padding: 10px; 
 
 }
->>>>>>> Stashed changes
+
