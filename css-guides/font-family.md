@@ -11,7 +11,7 @@ author: Caitlyn Muscat
 
 ## Example
 
-Here's an example of how to use the `font-family` CSS property" 
+Here's an example of how to use the `font-family` CSS property: 
 
 ```css
 h1, p {
