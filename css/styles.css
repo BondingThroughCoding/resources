@@ -48,6 +48,10 @@ h1 {
   border-radius: 10px;
 }
 
+:not(pre)>code[class*=language-]{
+  border-radius: .2em !important;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   padding: 0;
