@@ -25,7 +25,7 @@ The `<title>` tag goes inside the `<head>` section of your HTML.
 When someone visits your website, they'll see "My Awesome Website" on the browser tab.
 
 ### Why is it important?
-The <title> tag is important because:
+The `<title>` tag is important because:
 
 - It helps visitors know what your page is about before they even look at it.
 - It helps search engines, like Google, understand your page and display it in search results.

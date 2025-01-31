@@ -21,7 +21,8 @@ Headings are like titles or subtitles for different sections of your webpage. HT
 {% raw %}
 <div class='demo-container'>
   <div class='demo-title'>
-    <div>HTML Demo: &#96;&lt;h1&#96;&gt;-&#96;&lt;h6&#96;&gt;</div>
+    <div>HTML Demo: &lt;h1&gt;-&lt;h6&gt;</div>
+    <div class='reset-button'>Reset</div>
   </div>
   <div class='code-container'>
     <textarea id="code" name="code">
@@ -44,6 +45,15 @@ Headings are like titles or subtitles for different sections of your webpage. HT
 </div>
 
   <script>
+    var textarea = document.getElementById('code');
+    var initialContent = textarea.value;
+    
+    document.querySelector('.reset-button').addEventListener('click', function() {
+      editor.setValue(initialContent);
+      updatePreview();
+    });
+
+
     // Initialize CodeMirror
     var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       mode: 'xml',  // HTML, CSS, and JavaScript combined mode
