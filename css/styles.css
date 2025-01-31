@@ -109,7 +109,7 @@ code {
 .demo-container{
   display: flex;
   flex-direction: column;
-  background-color: #dfdfdf;
+  background-color: #30323f;
   border-radius: 5px;
   border: 1px solid #6f6f6f;
   padding-left: 30px;
@@ -126,6 +126,7 @@ code {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: white;
 }
 
 .CodeMirror {
