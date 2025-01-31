@@ -26,7 +26,7 @@ Tables grow row by row. Try making a magic creature zoo in the playground below!
   </div>
   <div class='code-container'>
     <textarea id="code" name="code">
-<table>
+<table border='1'>
   <tr>
     <th>Creature</th>
     <th>Superpower</th>
@@ -42,25 +42,7 @@ Tables grow row by row. Try making a magic creature zoo in the playground below!
     <td>Lava Breath</td>
     <td>Spicy Peppers</td>
   </tr>
-</table>
-<style>
-  table {
-    border: 3px solid #ff6b6b;
-    border-collapse: collapse;
-    background: #fff5f5;
-  }
-  th {
-    background: #4ecdc4;
-    color: white;
-    padding: 10px;
-    font-family: 'Comic Sans MS';
-  }
-  td {
-    padding: 8px;
-    border: 1px dotted #ff9999;
-    font-family: 'Bubblegum Sans';
-  }
-</style></textarea>
+</table></textarea>
     <iframe id="preview" style="border:none;"></iframe>
   </div>
 </div>

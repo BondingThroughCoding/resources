@@ -28,14 +28,7 @@ Start with the `<ul>` magic wand, add `<li>` bubbles between, and close with `</
   <li>Invisibility cloak</li>
   <li>Super-speed shoes</li>
   <li>Teleportation device</li>
-</ul>
-<style>
-  li { 
-    color: #ff69b4;
-    font-family: 'Bubblegum Sans';
-    font-size: 20px;
-  }
-</style></textarea>
+</ul></textarea>
     <iframe id="preview" style="border:none;"></iframe>
   </div>
 </div>

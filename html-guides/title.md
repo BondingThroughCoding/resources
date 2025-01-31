@@ -1,46 +1,92 @@
 ---
 layout: default
-title: Heading Tag Guide
+title: Title Tag Guide
 ---
 
-# Understanding the `<title>` Tag: Naming Your Webpage
+# Name Tag Magic: Using `<title>`! 🏷️
 
-The `<title>` tag is how you name your webpage. It’s a small but important part of your website, and it tells both visitors and browsers what your page is all about.
+The `<title>` tag gives your webpage its special name - like a superhero's secret identity! It shows up in browser tabs and helps people find your page. Let's become naming ninjas! 🥷
 
-## What is the `<title>` Tag?
+## What's a Title Tag? 🎯
 
-The `<title>` tag is used to give your webpage a name. This name appears:
-- On the browser tab at the top of your screen.
-- As the clickable title in search engine results.
-- When you bookmark a webpage.
+Your webpage's ID card:
+- Shows in browser tabs 📑
+- Appears in search results 🔍
+- Helps bookmarking 📌
+- Works like a book title for your page! 📚
 
-The `<title>` tag goes inside the `<head>` section of your HTML.
+### Let's Name Your Page! ✨
+Add a `<title>` inside the `<head>` section. Try creating a space adventure name below! 🚀
 
-### Example:
-```html
+{% raw %}
+<div class='demo-container'>
+  <div class='demo-title'>
+    <div>Name Workshop 🌟</div>
+    <div class='reset-button'>Reset</div>
+  </div>
+  <div class='code-container'>
+    <textarea id="code" name="code">
 <head>
-  <title>My Awesome Website</title>
+  <title>***Galaxy Explorer 3000***</title>
 </head>
-```
-When someone visits your website, they'll see "My Awesome Website" on the browser tab.
+<body>
+  <h1>🚀 Welcome Space Cadet!</h1>
+  <p>Ready to explore the Milky Way?</p>
+</body></textarea>
+    <iframe id="preview" style="border:none;"></iframe>
+  </div>
+</div>
 
-### Why is it important?
-The `<title>` tag is important because:
+<script>
+  // Standard interactive script
+  var textarea = document.getElementById('code');
+  var initialContent = textarea.value;
+  
+  document.querySelector('.reset-button').addEventListener('click', function() {
+    editor.setValue(initialContent);
+    updatePreview();
+  });
 
-- It helps visitors know what your page is about before they even look at it.
-- It helps search engines, like Google, understand your page and display it in search results.
-- It makes your webpage look professional by giving it a proper name.
+  var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
+    mode: 'xml',
+    lineNumbers: true,
+    theme: 'dracula',
+    matchBrackets: true
+  });
 
-### What Makes a Good Title?
-A good title should:
+  function updatePreview() {
+    var iframe = document.getElementById('preview');
+    var content = editor.getValue();
+    var doc = iframe.contentWindow.document;
+    doc.open();
+    doc.write(content);
+    doc.close();
+  }
 
-- Be short and clear.
-- Describe the content of the page.
-- Be interesting so people want to click on it.
+  editor.on('change', updatePreview);
+  updatePreview();
+</script>
+{% endraw %}
 
-Example of Good Titles:
-- "Learn HTML: A Beginner's Guide"
-- "How to Style Webpages with CSS"
-- "Fun Coding Projects for Kids"
+## Why Titles Rock! 🤘
 
-Now you know how the `<title>` tag works and why it's important! Use it to give your webpage a name that stands out. What title will you use for your website? Let me know if you need help coming up with one!
+1. **First Impression**: First thing people see in search results 👀
+2. **Tab Organization**: Helps find your page among many tabs 📑
+3. **Bookmark Friendly**: Makes saved pages easy to recognize 📌
+4. **SEO Superpower**: Helps search engines understand your page 🤖
+
+### Title Tricks 🎩
+- Keep it short (like a good tweet!) 🐦
+- Use important words first
+- Add your website name at the end
+- Make it exciting like a movie title! 🍿
+
+## Pro Tips for Title Masters 🏆
+
+- **Only one `<title>` per page** - No duplicates! 🚫
+- **50-60 characters max** - Fits in search results 📏
+- **Include keywords** - But keep it natural 🔑
+- **Be unique** - Like your fingerprint! 👆
+- **No emojis** (They look fun but can be messy in search results) 🚫🎉
+
+What awesome name will YOU choose? "Dinosaur Discovery Zone"? "Robot Coding Camp"? Show us in the playground! 🦖🤖

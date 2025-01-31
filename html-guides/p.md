@@ -5,7 +5,7 @@ title: Paragraph Tag Guide
 
 # Paragraph Power! Writing Stories with `<p>` 📝
 
-Paragraphs are like building blocks for your words - perfect for stories, jokes, or describing your favorite video game! Let's become text superheroes! 🦸♂️
+Paragraphs are like building blocks for your words - perfect for stories, jokes, or describing your favorite video game! Let's become text superheroes! 🦸
 
 ## What's a Paragraph Tag? 🤔
 
@@ -25,13 +25,10 @@ Wrap your words in `<p>` tags to create neat blocks. Try writing a dragon advent
   </div>
   <div class='code-container'>
     <textarea id="code" name="code">
-<p style="color: #4ecdc4; 
-          font-family: 'Comic Sans MS';
-          font-size: 20px;">
+<p>
   Sparky the dragon loved eating rainbow ice cream. 
   One day, he sneezed and... POOF! His cave turned into candy!
-</p>
-</textarea>
+</p></textarea>
     <iframe id="preview" style="border:none;"></iframe>
   </div>
 </div>

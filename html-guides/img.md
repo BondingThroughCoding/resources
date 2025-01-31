@@ -5,7 +5,7 @@ title: Image Tag Guide
 
 # Magic Windows: Using `<img>` to Show Pictures! 🖼️
 
-The `<img>` tag is like a photo frame for your webpage - perfect for showing cute animals, space adventures, or your latest drawings! Let's become picture wizards! 🧙♂️
+The `<img>` tag is like a photo frame for your webpage - perfect for showing cute animals, space adventures, or your latest drawings! Let's become picture wizards! 🧙
 
 ## What's an Image Tag? 🧐
 
@@ -25,17 +25,7 @@ Images need two special ingredients: _src_ for the picture location and _alt_ fo
   </div>
   <div class='code-container'>
     <textarea id="code" name="code">
-<img src="/assets/cat.jpg">
-<style>
-  img {
-    border: 3px solid #ff6b6b;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px pink;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-  }
-</style></textarea>
+<img src="/assets/cat.jpg"></textarea>
     <iframe id="preview" style="border:none;"></iframe>
   </div>
 </div>
@@ -60,6 +50,7 @@ Images need two special ingredients: _src_ for the picture location and _alt_ fo
   function updatePreview() {
     var iframe = document.getElementById('preview');
     var content = editor.getValue();
+    content += "<style>img {border-radius: 6px;width: 250px;height: 300px;object-fit: cover;}</style>"
     var doc = iframe.contentWindow.document;
     doc.open();
     doc.write(content);

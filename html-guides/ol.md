@@ -5,7 +5,7 @@ title: Ordered List Guide
 
 # Understanding the `<ol>` Tag: Creating Numbered Lists 🌟
 
-Ordered lists are like magic staircases for your ideas - each step gets its own automatic number! Perfect for recipes, game instructions, or ranking your favorite superheroes! 🦸♀️
+Ordered lists are like magic staircases for your ideas - each step gets its own automatic number! Perfect for recipes, game instructions, or ranking your favorite superheroes! 🦸
 
 ## What Are Ordered Lists? 🤔
 
@@ -28,11 +28,7 @@ Start with `<ol>`, add `<li>` items between, and close with `</ol>`. Try making 
   <li>Mix flour and eggs</li>
   <li>Add chocolate chips</li>
   <li>Bake at 350°F</li>
-</ol>
-<style>
-  ol { color: #ff6b6b; }
-  li { color: #4ecdc4; font-family: 'Comic Sans MS'; }
-</style></textarea>
+</ol></textarea>
     <iframe id="preview" style="border:none;"></iframe>
   </div>
 </div>
