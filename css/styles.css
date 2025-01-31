@@ -12,7 +12,10 @@ h1 {
   padding: 40px;
   text-align: center;
   background-color: rgb(155, 79, 154);
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 
 }
 
@@ -23,7 +26,7 @@ h1 {
 
 .content {
   background-color: #346ca7;
-  border-radius: 20px;
+  border-radius: 10px;
   
 }
 
@@ -42,7 +45,7 @@ h1 {
 
 .sidebar {
   background-color: #e5a335;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 body {
@@ -51,6 +54,7 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
+  margin-inline: 20px;
   
 }
 
@@ -83,7 +87,7 @@ code {
 }
 
 .content {
-  margin-left: 40px;
+  margin-left: 20px;
   padding: 20px;
   flex: 1; /* Takes up the remaining space */
   word-wrap: break-word; /* Allows the text to wrap if necessary */
@@ -152,7 +156,7 @@ footer {
   background-color: rgb(155, 79, 154);
   margin-top: 20px;
   margin-bottom: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 10px; 
 }
 
