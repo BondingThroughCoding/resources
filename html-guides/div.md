@@ -18,38 +18,32 @@ The `<div>` tag is short for "division." It’s used to divide your webpage into
 - **To layout your webpage** – You can create columns, sections, and more by using `<div>` tags.
 
 ### Example:
-```html
-<div class="container">
-  <h1>Welcome to My Webpage</h1>
-  <p>This is the main section of my webpage.</p>
-</div>
-```
 {% raw %}
 <div class='demo-container'>
   <div class='demo-title'>
-    <div>HTML Demo: &#96;&lt;div&#96;&gt;</div>
+    <div>HTML Demo: &lt;h1&gt;-&lt;h6&gt;</div>
+    <div class='reset-button'>Reset</div>
   </div>
   <div class='code-container'>
     <textarea id="code" name="code">
-<h1>Heading 1: Largest and Most Important</h1>
-<h2>Heading 2: Slightly Smaller</h2>
-<h3>Heading 3: Medium Size</h3>
-<h4>Heading 4: Smaller Heading</h4>
-<h5>Heading 5: Even Smaller</h5>
-<h6>Heading 6: Smallest Heading</h6>
-<style>
-  h1 {color: red;}
-  h2 {color: blue;}
-  h3 {color: green;}
-  h4 {color: orange;}
-  h5 {color: purple;}
-  h6 {color: black;}
-</style></textarea>
+<div class="container">
+  <h1>Welcome to My Webpage</h1>
+  <p>This is the main section of my webpage.</p>
+</div></textarea>
     <iframe id="preview" style=" border: none;"></iframe>
   </div>
 </div>
 
   <script>
+    var textarea = document.getElementById('code');
+    var initialContent = textarea.value;
+    
+    document.querySelector('.reset-button').addEventListener('click', function() {
+      editor.setValue(initialContent);
+      updatePreview();
+    });
+
+
     // Initialize CodeMirror
     var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
       mode: 'xml',  // HTML, CSS, and JavaScript combined mode
@@ -79,7 +73,6 @@ The `<div>` tag is short for "division." It’s used to divide your webpage into
   </script>
 
 {% endraw %}  
-
 In this example:
 
 - The <div> groups the heading (<h1>) and the paragraph (<p>) together.
