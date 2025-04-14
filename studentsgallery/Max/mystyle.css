@@ -1,0 +1,31 @@
+p{
+    color:white
+
+}
+
+body{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+background-color:orangered
+
+
+}
+
+#img1{
+    border-radius: 50%;
+    animation: spin 4s ease-in-out infinite;
+}
+#p1 {
+
+    background-color:#f58e08;
+    border-radius: 5px;
+    padding: 15px;
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
