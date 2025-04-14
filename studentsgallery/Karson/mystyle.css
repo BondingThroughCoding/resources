@@ -1,0 +1,48 @@
+p{
+    color:black;
+    background-color:yellowgreen ;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+h1,  h2, h3{
+    text-align: center;
+    color:rgb(24, 27, 5)
+    
+}
+
+
+body{
+    background-color: lightgreen;
+    font-family: 'Trebuchet MS';    margin: 30px
+    
+}
+
+#img1{
+    border-radius: 10%;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg );
+    }
+    to{
+        transform: rotate(360deg );
+    }
+}
+
+
+img:hover{
+    transform: scaleX(-1);
+}
+
+table{
+    text-align:center;
+}
+
+tr:hover{
+    color:red
+}
