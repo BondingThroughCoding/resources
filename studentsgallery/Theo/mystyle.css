@@ -1,0 +1,35 @@
+p {
+  color: blue;
+background-color:white ;
+padding: 25px;
+border-radius: 15px;
+}
+h1{text-align:center}
+h2 {
+  color: red;
+  text-align: left;
+}
+body {
+  background-color: #ffcc66;
+  font-family: sans-serif;
+  margin: 30px;
+  
+}
+
+#img1 {
+  border-radius: 50%;
+}
+#img1:hover{
+    transform:scaleX(-1);
+  animation: spin 0.00001s ease-in-out infinite;
+
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
