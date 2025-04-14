@@ -1,0 +1,48 @@
+p {
+    color: #770da8;
+    background-color: rgb(194, 222, 238);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1,
+h3 {
+    color: rgb(5, 92, 87);
+}
+
+body {
+    background-color: #07d1f5;
+    font-family: verdana;
+    margin: 30px;
+}
+
+#img1:hover {
+    transform: scaleX(-1);
+}
+
+#img1 {
+    border-radius: 50%;
+}
+
+ul li {
+    font-family: verdana, Geneva, Tahoma, sans-serif;
+}
+
+#img1 {
+    animation: spin 3s linear infinite;
+
+}
+
+table {
+    text-align: center;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
